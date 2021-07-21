@@ -23,12 +23,12 @@ int main(void)
 {
 	/* Blink*/
 	/* uncomment to try on this!*/
-	init_gpio_write(GPIOE, GPIO_Pin_5);
+	init_gpio_write(GPIOC, GPIO_Pin_13);
 	while(1){
-  	set_gpio(GPIOE, GPIO_Pin_5, ON);
-		delay_ms(500);
-		set_gpio(GPIOE, GPIO_Pin_5, OFF);
-		delay_ms(500);
+  		set_gpio(GPIOC, GPIO_Pin_13, ON);
+		delay_ms(1000);
+		set_gpio(GPIOC, GPIO_Pin_13, OFF);
+		delay_ms(1000);
 	}
 	
 	/* GPIO.h example */
